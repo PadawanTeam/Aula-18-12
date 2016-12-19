@@ -10,7 +10,6 @@ Resumo da Aula de 18-12, iniciando com banco de dados
 ###O que é banco de dados?
 
 Como o próprio nome diz, um banco de dados consiste em banco para armazenarmos dados.
-O mais conhecido são os que utilizam comandos SQL.
 
 Os dados podem ser qualquer coisa que possa ser armazenado para algum fim, geralmente compor uma informação. Por exemplo,
 
@@ -71,7 +70,7 @@ obs.: o campo cod é PRIMARY KEY, e o campo cod_pai é FOREIGN KEY que se relaci
 ------------------------------------------------------------------------------------------------------------------------------------------
 ###Um pouco sobre mongoDb
 
-O mongoDb é um banco de dados não relacional, que trabalha com objetos json, o mesmo tipo de objetos que criamos no dia a dia da 
+O mongoDb é um banco de dados não relacional, que trabalha com documentos/objetos json, o mesmo tipo de objetos que criamos no dia a dia da 
 programação em js!
 
 Exemplo de objeto json:
