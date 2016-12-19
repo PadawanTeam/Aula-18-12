@@ -187,7 +187,7 @@ db.mercado.find()
 ```
 o resultado será:
 ```javascript
-{ "_id" : ObjectId("5856fed84b5807ff7c76fd23"), "yogurte" : "Danone", "cerveja" : "Heineken", "oao" : "Pullman" }
+{ "_id" : ObjectId("5856fed84b5807ff7c76fd23"), "yogurte" : "Danone", "cerveja" : "Heineken", "pao" : "Pullman" }
 ```
 
 Note que foi gerado um _id, que é um ID unico criado pelo mongo!
