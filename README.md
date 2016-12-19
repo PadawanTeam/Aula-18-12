@@ -12,7 +12,6 @@ Resumo da Aula de 18-12, iniciando com banco de dados
 Como o próprio nome diz, um banco de dados consiste em banco para armazenarmos dados.
 
 Os dados podem ser qualquer coisa que possa ser armazenado para algum fim, geralmente compor uma informação. Por exemplo,
-
 podemos armazenar um número (1997), sozinho ele não representa nada, mas se ele for acompanhado da descrição "Ano de nascimento: ", está
 compondo uma informação (o ano de nascimento de alguem, em 1997).
 
@@ -54,7 +53,7 @@ Tabela PAI:
 
 obs.: o campo cod é PRIMARY KEY
 
-Talela FILHO
+Tabela FILHO
 
 
 |cod | nome | cod_pai|
@@ -145,7 +144,51 @@ UPDATE tabelaX SET nome = "Felipe Alencar", anoNascimento = 1990.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-###MongoDB
+###Nos familiarizando com MongoDB
+
+Como o mongoDB utiliza objetos json, os comandos são diferentes do SQL, em vez de usarmos comandos como SELECT, INSERT, utilizamos funções! Como no javascript (ou até mesmo java) para chamarmos funções (ou métodos, no java), utilizamos sempre o "." (Ponto), funções 
+são identificadas com "()" no final!
+
+
+####Criando um Banco de Dados
+
+
+para criarmos um banco:
+```javascript
+use mercado
+```
+
+A partir desse momento, já estamos utilizando uma base nova, mas se nenhuma alteração for feita e o usuário sair da 
+aplicação, ela será simplesmente apagada (pois não foi salva), ao inserir dados, ela se salva.
+
+
+####Inserindo dados (Criando collection)
+
+Nossas collections são como as tabelas em banco de dados que utiliza SQL, para criarmos elas, utilizamos uma função que 
+se chama insert()
+
+```javascript
+db.mercado.insert({
+                    yogurte:'Danone',
+                    cerveja:'Heineken',
+                    pao:'Pullman'
+                    })
+```
+
+Note que estamos usando a função insert(), passando um objeto json dentro dela (Reconhecido pelo {}) e já colocando
+dados dentro dele!
+
+####Buscando dados
+
+Para burcas os dados dentro das nossas collections, também utilizamos uma função, ela se chama find():
+
+```javascript
+db.mercado.find()
+```
+o resultado será:
+```javascript
+{ "_id" : ObjectId("5856fed84b5807ff7c76fd23"), "yogurte" : "Danone", "cerveja" : "Heineken", "oao" : "Pullman" }
+```
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
